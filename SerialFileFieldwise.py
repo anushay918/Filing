@@ -1,4 +1,3 @@
-#serialfilefieldwise
 import os
 def addrecord():
     newfile = open('123.txt','at')
@@ -13,6 +12,7 @@ def addrecord():
 
         studentname = input('Enter name:  ')
     newfile.close()
+
 addrecord()
 
 def displayrecord():
@@ -28,7 +28,7 @@ def displayrecord():
             studentname = newfile.readline()
         newfile.close()
     except:
-        print('file, there is none')
+        print('file doesnot exist')
 
 displayrecord()
 
@@ -48,7 +48,7 @@ def searchrecord():
         else:
             print(studentname, studentclass, studentage)
     except:
-        print('File,there is none')
+        print('File doesnt exist')
         
 searchrecord()
 
